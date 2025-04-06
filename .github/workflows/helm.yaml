@@ -17,6 +17,9 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v4
 
+      - name: CURL Helm Repo
+        run: curl -I https://github.com/ynnckvdv/helm-common/pkgs/container/helm-common
+
       - name: Add helm-common repo
         run: helm repo add helm-common https://github.com/ynnckvdv/helm-common/pkgs/container/helm-common
 
