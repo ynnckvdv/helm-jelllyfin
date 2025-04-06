@@ -33,7 +33,7 @@ jobs:
         run: helm package .
         
       - name: Helm Registry Login
-        run: helm registry login ghcr.io -u ynnckvdv -p ${{ HELM_REGISTRY_TOKEN }}
+        run: helm registry login ghcr.io -u ynnckvdv -p ${{ secrets.HELM_REGISTRY_TOKEN }}
 
       - name: Push Helm Chart to packages
         run: helm push *.tgz oci://ghcr.io/ynnckvdv
