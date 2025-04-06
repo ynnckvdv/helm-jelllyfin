@@ -18,7 +18,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Add helm-common repo
-        run: helm repo add helm-common https://ghcr.io/ynnckvdv/helm-common
+        run: helm repo add helm-common oci://ghcr.io/ynnckvdv/helm-common
 
       - name: Helm Repo Update
         run: helm repo Update
