@@ -26,4 +26,4 @@ appVersion: "1.16.0"
 dependencies:
   - name: helm-common
     version: 0.0.2
-    repository: https://ghcr.io/ynnckvdv/helm-common
+    repository: https://github.com/ynnckvdv/helm-common/pkgs/container/helm-common
