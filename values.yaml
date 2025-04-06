@@ -1,0 +1,6 @@
+helm-common: # We use the helm-common Chart to override default values or fill them in for the first time
+  appName: jellyfin
+  namespace: media-server
+  image: jellyfin/jellyfin
+  imageTag: latest
+  port: 8096
